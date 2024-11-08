@@ -1,0 +1,34 @@
+<html>
+<head>
+    <title>Calculadora de Préstamos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Calculadora de Préstamos</h1>
+        <p>Ingresa el monto y selecciona un porcentaje</p>
+        <form>
+            <!-- Campo para ingresar el monto -->
+            <input type="text" id="entrada" placeholder="Monto a calcular">
+
+            <!-- Lista desplegable de porcentajes -->
+            <label for="porcentaje">Selecciona un porcentaje:</label>
+            <select id="porcentaje">
+                <option value="0.1">10%</option>
+                <option value="0.2">20%</option>
+                <option value="0.3" selected>30%</option>
+                <option value="0.5">50%</option>
+                <option value="1">100%</option>
+            </select>
+
+            <!-- Botón para calcular -->
+            <button type="button" id="calcular">Calcular</button>
+        </form>
+
+        <!-- Lugar para mostrar el resultado -->
+        <p id="resultado"></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
